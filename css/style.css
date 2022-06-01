@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.nav_phone {
+    display: none;
+}
+.nav_desktop {
+    background-color: #3229E0;
+}
+.nav_desktop ul {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    list-style: none;
+    align-content: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: 44px;
+    margin: 0 -8px;
+    align-items: center;
+}
+/* Inicio primera parte del main */
+.slogan_msr {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: slogan;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.img_inicio {
+    display: block;
+    display: flex;
+    grid-area: img1;
+    justify-content: center;
+    margin: 10px -8px;
+    background-color: #f0811ab6;
+    padding: 10px;
+}
+.img_inicio img {
+    border-radius: 10px;
+}
+.img_inicio_2 {
+    display: flex;
+    grid-area: img2;
+    justify-content: center;
+    margin: 10px -8px;
+    background-color: #7ced1fb7;
+    padding: 10px;
+}
+.img_inicio_2 img {
+    border-radius: 10px;
+}
+.inicio_desktop {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 1fr 1fr;
+    grid-template-areas: 
+    "slogan"
+    "img1"
+    "img2";
+}
+.tit_nuestraHistoria {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: tit_hist;
+    margin: 10px;
+}
+.historia_1 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: hist_1;
+    margin: 10px;
+    align-items: center;
+}
+.historia_2 {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: hist_2;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+}
+.nuestra_historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 1fr 1fr;
+    grid-template-areas: 
+    "tit_hist"
+    "hist_1"
+    "hist_2";
+}
+.nuestra_historia img {
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+/* Fin primera parte del main */
+/* Inicio seccion contacto */
+.tit_cont {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    grid-area: tit_contacto;
+    margin: 10px;
+}
+.cont_cont {
+    display: flex;
+    grid-area: cont_1;
+    margin: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont_cont div iframe {
+    border-radius: 10px;
+}
+.contacto {
+    background-color: #d91491bb;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 1fr;
+    grid-template-areas: 
+    "tit_contacto"
+    "cont_1";
+}
+/* Fin seccion contato */
+/* Inicio footer */
+.foot_1 {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    grid-area: pie_1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foot_2 {
+    display: flex;
+    grid-area: pie_2;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foot {
+    margin: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr;
+    grid-template-areas: 
+    "pie_1 pie_2";
+}
+/* Fin footer */
+/* Inicio galeria */
+.galeria_tit {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    grid-area: tit_gal;
+}
+.galeria_1 {
+    background-color: #3ae817af;
+    display: flex;
+    grid-area: gal_1;
+    padding: 10px -8px;
+    justify-content: center;
+}
+.galeria_2 {
+    background-color: #eb6410b7;
+    padding: 10px -8px;
+    display: flex;
+    grid-area: gal_2;
+    justify-content: center;
+}
+.galeria_3 {
+    background-color: #f218b1b6;
+    padding: 10px -8px;
+    display: flex;
+    grid-area: gal_3;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.02fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "tit_gal"
+        "gal_1"
+        "gal_2"
+        "gal_3";
+        margin: 10px;
+}
+.gallery div img {
+    border-radius: 10px;
+    margin: 10px;
+}
+/* Inicio pantalla mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .nav_desktop {
+        display: none;
+    }
+    .nav_phone {
+        display: flex;
+        background-color: rgba(0, 0, 255, 0.521);
+        justify-content: center;
+    }
+    .nav_phone ul {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        list-style: none;
+        align-content: center;
+        justify-content: space-evenly;
+        width: auto;
+        height: 44px;
+        margin: 0 -8px;
+        align-items: center;
+    }
+ }
