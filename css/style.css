@@ -32,6 +32,9 @@ a {
     justify-content: center;
     margin: 20px;
 }
+.imagen_carr {
+    width: 60%;
+}
 .img_inicio {
     display: block;
     display: flex;
