@@ -7,6 +7,7 @@
     <title>MSR | Galeria</title>
     <link rel="shortcut icon" href="../assets/Imagenes/Logos/logo MSR fondo transparente.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,30 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav_desktop">
-                <ul>
-                    <li><a href="../index.html"><img src="../assets/Imagenes/Logos/logo para menu.png" alt=""></a></li>
-                    <li><h1>Movimiento Solidario Rosario</h1></li>
-                    <li><a href="../index.html#nuestra_hist">Nuestra Historia</a></li>
-                    <li>¿Qué hacemos?</li>
-                    <li>¿Querés ser parte?</li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="../index.html#contacto">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top navbar-my-style">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../assets/Imagenes/Logos/logo para menu.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Nuestra Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">¿Que hacemos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">¿Queres ser parte?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-            <div class="nav_phone">
-             <ul>
-                <li>Menu</li>
-                <li><img src="../assets/Imagenes/Logos/logo para menu.png" alt=""></li>
-                <li>Contacto</li>
-             </ul>
-            </div>
-        </nav>
+          </nav>
     </header>
     <section class="gallery">
         <div class="galeria_tit"><h3>Galeria</h3></div>
@@ -63,5 +68,6 @@
             <a href="https://www.facebook.com/movimientosolidariorosariio/"> <img src="../assets/Imagenes/Logos/1509135368facebook-transparent-logo-png-1600x1600.png" alt=""></a> 
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
