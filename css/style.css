@@ -147,21 +147,18 @@ a {
     grid-area: tit_gal;
 }
 .galeria_1 {
-    background-color: #3ae817af;
     display: flex;
     grid-area: gal_1;
     padding: 10px -8px;
     justify-content: center;
 }
 .galeria_2 {
-    background-color: #eb6410b7;
     padding: 10px -8px;
     display: flex;
     grid-area: gal_2;
     justify-content: center;
 }
 .galeria_3 {
-    background-color: #f218b1b6;
     padding: 10px -8px;
     display: flex;
     grid-area: gal_3;
