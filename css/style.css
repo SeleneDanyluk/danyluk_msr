@@ -21,15 +21,18 @@ a {
     grid-area: slogan;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 100px auto;
+}
+.animate__fadeInLeftBig:hover {
+    transition: all 1.5s;
 }
 .img_inicio {
     display: block;
     display: flex;
     grid-area: img1;
     justify-content: center;
-    margin: 10px -8px;
-    padding: 10px;
+    margin: 0 auto;
+    
 }
 .img_inicio img {
     border-radius: 10px;
@@ -38,8 +41,8 @@ a {
     display: flex;
     grid-area: img2;
     justify-content: center;
-    margin: 10px -8px;
-    padding: 10px;
+    margin: 10px auto;
+    
 }
 .img_inicio_2 img {
     border-radius: 10px;
@@ -52,6 +55,9 @@ a {
     "slogan"
     "img1"
     "img2";
+}
+.inicio_desktop h2 {
+    font-family: 'Montserrat', sans-serif;
 }
 .tit_nuestraHistoria {
     font-family: 'Montserrat', sans-serif;
@@ -107,6 +113,7 @@ a {
 }
 .contacto {
     background-color: #d91491bb;
+    margin: 0 auto;
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -181,5 +188,8 @@ a {
 }
 /* Inicio pantalla mobile */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-    
+    .img_inicio {
+        display: flex;
+        margin: 10px auto;
+    }
  }
